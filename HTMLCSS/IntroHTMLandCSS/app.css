@@ -1,0 +1,40 @@
+h1{
+	color: red;
+}
+li{
+	color: blue;
+}
+
+body{
+	background: url(https://images.all-free-download.com/images/graphiclarge/sunset_cloud_background_192372.jpg);
+					background-repeat: no-repeat;	
+					background-size: cover;
+}
+
+#special{
+	background: yellow;
+}
+
+.completed{
+	text-decoration: line-through;
+}
+
+
+/*
+Attribute Selector
+
+a[href="http://www.google.com"]{
+	background: blue;
+}
+*/
+
+
+/*
+
+nth of type
+
+ul:nth-of-type(3){
+	background: purple;
+}
+
+*/
