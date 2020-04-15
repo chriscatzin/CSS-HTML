@@ -1,7 +1,5 @@
 p{
 
-
-
 /* Content - Width and Height */
 width: 50%;
 height: ;
@@ -13,5 +11,6 @@ border: 2px solid blue;
 padding: 10px;
 
 /* Margin */
-
+/*margin: 100px;*/
+margin-top: 500px;
 }
