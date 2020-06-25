@@ -22,14 +22,14 @@
     </nav>
 
     <section id="header" class="jumbotron text-center">
-        <h1 class="display-3">WELCOME to the Contact Page!</h1>
+        <h1 class="display-3">Welcome to the Contact Page!</h1>
         <p class="lead">
             Hello! You can contact me via email<strong>( ckc196@humboldt.edu )</strong> or 
             by phone<strong>( 424-339-6515 )</strong>. You can also
             leave a message by filling out the boxes below! Thank you!
         </p>
         <div class="container">
-            <form action="action_page.php">
+            <form id="myForm" action="/action_page.php">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -37,28 +37,29 @@
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Your phone number..">
           
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input id="contactButton" type="submit" value="Submit">
           
             </form>
+          </div>
+          <button class="btn btn-success" id="contactButton" onclick="myFunction()">Submit</button>
+          <br>
+
+          <div class="container">
+            <ul style="text-align:center; list-style-position:inside;">
+              <li id="demo1"></li>
+              <li id="demo2"></li>
+              <li id="demo3"></li>
+            </ul>
           </div>
 
         <a href="index.html" class="btn btn-primary">Home</a>
         <a href="bio.html" class="btn btn-success">Bio</a>
     </section>
-
     
-
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="contacts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
